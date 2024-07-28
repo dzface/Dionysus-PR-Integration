@@ -1,0 +1,44 @@
+body {
+  width: 300px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1); /* 검은색 반투명 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* 모달보다 뒤에 있도록 설정 */
+}
+.modal {
+  background: rgba(255, 255, 255);
+  border-radius: 8px;
+  border: 1px solid #000;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  z-index: 1001; /* 오버레이보다 앞에 있도록 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 모달에 그림자 추가 */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modalTitle {
+  font-size: 20px;
+  color: #000;
+}
+.modalText {
+  font-size: 15px;
+  color: #000;
+}
+
+.closeButton {
+  background-color: rgb(50, 50, 50);
+  font-weight: bolder;
+}

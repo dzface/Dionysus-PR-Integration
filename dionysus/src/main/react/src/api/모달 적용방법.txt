@@ -1,0 +1,41 @@
+
+// 사전 환경설정-
+현재 ReactModal 라이브러리 설치되어있음
+없을 경우 터미널에서 yarn add . react-modal 입력하여 설치
+
+//// 적용방법 ////
+
+적용하고 싶은 컴포넌트에 임포트 코드 입력
+
+import ReactModal from "react-modal";
+import ModalApi from "../../api/ModalApi";
+ReactModal.setAppElement("#root"); 
+
+// modal 컴포넌트 배치(적용 컴포넌트 return 최외곽 modalTitle과 modalText에 입력값 수정 가능)
+return(
+  <>
+    <ModalApi.SuccessModal isOpen={SuccessModalOpen} onClose={handleSuccessCloseModal} modalTitle={"로그인 성공"} modalText={"앙기모띠"}/>
+    <ModalApi.FailModal isOpen={FailModalOpen} onClose={handleFailCloseModal} modalTitle={"로그인 실패"} modalText={"아이디 비밀번호를 다시 확인해주세요."}/>
+  </>
+)
+
+// 기본상태 입력(숨김)
+  const [SuccessModalOpen, setSuccessModalOpen] = useState(false);
+  const [FailModalOpen, setFailModalOpen] = useState(false);
+const handleSuccessCloseModal = () => {
+    setSuccessModalOpen(false);
+    navigate("/"); // Navigate to the home page or any other page
+  };
+  const handleFailCloseModal = () => {
+    setFailModalOpen(false);
+  };
+
+/////////////////
+
+
+//modal 이벤트 발생 구간 입력 코드
+setSuccessModalOpen(true); // Show success modal
+setFailModalOpen(true) // Show fail modal
+
+
+

@@ -1,0 +1,32 @@
+.backButton {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin: 0px 500px 600px 0;
+
+  background-image: url("../../img/loginpageimg/backicon.png");
+  background-size: contain;
+}
+
+.backButton .underLine {
+  position: absolute;
+  bottom: -2px; /* 원하는 위치로 조절 */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black; /* 줄 색상 설정 */
+  visibility: hidden;
+  transition: visibility 0.3s ease;
+}
+
+.backButton:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+@media (max-width: 768px) {
+  .backButton {
+    width: 20px;
+    height: 20px;
+    margin: 0 250px 350px 0;
+  }
+}

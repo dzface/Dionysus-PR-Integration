@@ -1,0 +1,109 @@
+.container {
+  width: 100%;
+  display: flex; /* 부모 요소를 flex container로 설정 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  margin: 0 auto;
+}
+
+.box {
+  width: 580px;
+  height: 691px;
+  padding: 20px;
+  display: flex; /* 자식 요소들을 flex container로 설정 */
+  flex-direction: column; /* 자식 요소들을 세로 방향으로 배열 */
+  justify-content: center; /* 수직 가운데 정렬 */
+  align-items: center; /* 수평 가운데 정렬 */
+  text-align: center;
+  background: conic-gradient(
+    rgba(82, 1, 32, 0.6) 0%,
+    rgba(150, 43, 9, 0.6) 20%,
+    rgba(181, 113, 20, 0.6) 40%,
+    rgba(8, 64, 62, 0.6) 60%,
+    rgba(112, 101, 19, 0.6) 80%,
+    rgba(82, 1, 32, 0.6) 100%
+  );
+  border-radius: 10px;
+}
+.title {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+.imageItem {
+  width: 150px;
+  height: 150px;
+  background-image: url("../../img/mypageimg/delete.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 20px 0;
+}
+input {
+  width: 60%;
+  height: 40px;
+  font-size: 20px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 20px;
+  padding-left: 30px;
+  margin-bottom: 30px; /* 원하는 마진 값으로 설정 */
+}
+input::placeholder {
+  font-size: 20px;
+  color: rgb(250, 250, 250);
+  padding-left: 0;
+}
+.caution {
+  font-size: 15px;
+  position: relative;
+  min-height: 30px;
+}
+.finalCheck {
+  width: 200px;
+  height: 50px;
+  line-height: 50px; /*텍스트 상하정렬*/
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .box {
+    width: 400px;
+    height: 480px;
+    transition: 0.5s;
+  }
+  .title {
+    font-size: 25px;
+    margin: 20px 0 20px 0;
+    transition: 0.5s;
+  }
+  .imageItem {
+    width: 120px;
+    height: 120px;
+    margin: 10px 0 50px 0;
+    transition: 0.5s;
+  }
+  input {
+    width: 60%;
+    height: 30px;
+    font-size: 16px;
+    margin-bottom: 22px;
+    transition: 0.5s;
+  }
+  input::placeholder {
+    font-size: 16px;
+    transition: 0.5s;
+  }
+  .finalCheck {
+    width: 150px;
+    height: 40px;
+    line-height: 36px;
+    font-size: 16px;
+    margin-top: 6px;
+    transition: 0.5s;
+  }
+}

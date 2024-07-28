@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.572c20a6.css",
+    "main.js": "/static/js/main.089b315b.js",
+    "static/js/453.eaf107f4.chunk.js": "/static/js/453.eaf107f4.chunk.js",
+    "static/media/video.mp4": "/static/media/video.061259bc405c6c35cd94.mp4",
+    "static/media/whiskey.jpg": "/static/media/whiskey.1738e437782165fc8709.jpg",
+    "static/media/beer.jpg": "/static/media/beer.f39427bc391b6b839b02.jpg",
+    "static/media/jjimfail.gif": "/static/media/jjimfail.4c2463ac24732be17b05.gif",
+    "static/media/all.webp": "/static/media/all.d675adf18fba7ce3e41d.webp",
+    "static/media/scoresuccess.gif": "/static/media/scoresuccess.d3153906d7df72f062b8.gif",
+    "static/media/reviewfail.gif": "/static/media/reviewfail.dd2a0cf4935438d4b069.gif",
+    "static/media/wine.jpg": "/static/media/wine.ea9e826063c7d75f5a89.jpg",
+    "static/media/reviewsuccess.gif": "/static/media/reviewsuccess.b29f82504ea00f7ea4cb.gif",
+    "static/media/loginneed.gif": "/static/media/loginneed.9698aadb189af9d3deb5.gif",
+    "static/media/traditional.jpg": "/static/media/traditional.f0864a8430ec7f86bbac.jpg",
+    "static/media/instargram-icon.png": "/static/media/instargram-icon.b1c3cf1fe6e50a7442ec.png",
+    "static/media/logo1.jpeg": "/static/media/logo1.cd81f859a1f5670ca85d.jpeg",
+    "static/media/al1.jpg": "/static/media/al1.bbda82ed04e1262dde0a.jpg",
+    "index.html": "/index.html",
+    "main.572c20a6.css.map": "/static/css/main.572c20a6.css.map",
+    "main.089b315b.js.map": "/static/js/main.089b315b.js.map",
+    "453.eaf107f4.chunk.js.map": "/static/js/453.eaf107f4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.572c20a6.css",
+    "static/js/main.089b315b.js"
+  ]
+}
